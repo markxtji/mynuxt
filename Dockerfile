@@ -6,6 +6,8 @@ FROM amazeeio/node:8
 COPY --from=builder /app/node_modules /app/node_modules
 COPY . /app/
 
+
+ENV HOST 0.0.0.0
 EXPOSE 3000
 
 
